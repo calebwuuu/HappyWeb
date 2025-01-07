@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my happy web</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; 
+            background-color: rgb(178, 245, 208);
+            text-align: center;
+        }
+        h1 {
+            color: rgb(144, 151, 236);
+            font-family: 'Gill Sans', sans-serif;
+        }
+        .floating {
+            position: absolute;
+            font-size: 50px;
+            font-family: 'Gill Sans', sans-serif;
+            color: rgb(144, 151, 236);
+            animation: float 5s infinite ease-in-out alternate;
+        }
+        @keyframes float {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(50px, -30px);
+            }
+            50% {
+                transform: translate(-50px, 50px);
+            }
+            75% {
+                transform: translate(30px, -50px);
+            }
+            100% {
+                transform: translate(-30px, 30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>my happy web</h1>
+    <a href="Subfolders/food.html" class="floating" style="top: 20%; left: 15%;">food🍔</a>
+    <a href="Subfolders/music.html" class="floating" style="top: 40%; left: 50%;">music🎧</a>
+    <a href="Subfolders/places.html" class="floating" style="top: 60%; left: 80%;">places📍</a>
+</body>
+</html>
